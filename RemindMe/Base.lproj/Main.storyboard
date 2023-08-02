@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-93-E2v">
+                                <rect key="frame" x="329" y="61.666666666666671" width="40" height="43"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ah6-nB-RBm"/>
+                                    <constraint firstAttribute="height" constant="40" id="cB0-if-6zf"/>
+                                </constraints>
+                                <imageReference key="image" image="plus.app.fill" catalog="system" renderingMode="hierarchical">
+                                    <hierarchicalColors>
+                                        <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color systemColor="systemGrayColor"/>
+                                        <color white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </hierarchicalColors>
+                                </imageReference>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ncu-1A-plL">
+                                <rect key="frame" x="24" y="131" width="345" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="9B0-JG-paF"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fo9-wk-oGI">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDa-6I-RSD">
+                                <rect key="frame" x="24" y="115" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBe-6N-7sP">
+                                <rect key="frame" x="345" y="105" width="24" height="14"/>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray"/>
+                                <connections>
+                                    <action selector="onYearButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHM-8V-Obs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGh-PN-GRl">
+                                <rect key="frame" x="309" y="105" width="24" height="14"/>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray"/>
+                                <connections>
+                                    <action selector="onMonthButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ip7-hf-dzy"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-Dt-s8h">
+                                <rect key="frame" x="0.0" y="375" width="393" height="477"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hEh-GU-p8e">
+                                        <rect key="frame" x="8" y="49.666666666666714" width="377" height="427.33333333333326"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dyh-Wk-pCj">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmV-i4-Vog">
+                                        <rect key="frame" x="24.000000000000007" y="12" width="115.66666666666669" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="hEh-GU-p8e" firstAttribute="leading" secondItem="qLa-Dt-s8h" secondAttribute="leading" constant="8" id="5rv-tY-XaI"/>
+                                    <constraint firstAttribute="trailing" secondItem="hEh-GU-p8e" secondAttribute="trailing" constant="8" id="AUk-LA-pnv"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WmV-i4-Vog" secondAttribute="trailing" constant="20" symbolic="YES" id="Kkb-9O-PbG"/>
+                                    <constraint firstAttribute="bottom" secondItem="hEh-GU-p8e" secondAttribute="bottom" id="XV4-5o-SHx"/>
+                                    <constraint firstItem="hEh-GU-p8e" firstAttribute="top" secondItem="WmV-i4-Vog" secondAttribute="bottom" constant="4" id="bop-uB-KB5"/>
+                                    <constraint firstItem="WmV-i4-Vog" firstAttribute="top" secondItem="qLa-Dt-s8h" secondAttribute="top" constant="12" id="qLQ-bU-J0v"/>
+                                    <constraint firstItem="WmV-i4-Vog" firstAttribute="leading" secondItem="qLa-Dt-s8h" secondAttribute="leading" constant="24" id="vxI-85-GbG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="qLa-Dt-s8h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Ea-Gr-DC2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qLa-Dt-s8h" secondAttribute="trailing" id="3w0-Ko-fVh"/>
+                            <constraint firstItem="ahv-93-E2v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="FcS-08-LC0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBe-6N-7sP" secondAttribute="trailing" constant="24" id="G1k-i8-f5l"/>
+                            <constraint firstItem="VGh-PN-GRl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xDa-6I-RSD" secondAttribute="trailing" constant="12" id="JMw-7e-kyb"/>
+                            <constraint firstItem="Ncu-1A-plL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NDb-8W-6Yl"/>
+                            <constraint firstItem="Ncu-1A-plL" firstAttribute="top" secondItem="gBe-6N-7sP" secondAttribute="bottom" constant="12" id="SN9-VT-zWs"/>
+                            <constraint firstItem="Ncu-1A-plL" firstAttribute="top" secondItem="VGh-PN-GRl" secondAttribute="bottom" constant="12" id="Y88-AZ-Xxi"/>
+                            <constraint firstItem="xDa-6I-RSD" firstAttribute="top" secondItem="ahv-93-E2v" secondAttribute="bottom" constant="12" id="aE4-O0-y0N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ahv-93-E2v" secondAttribute="trailing" constant="24" id="clL-gZ-0Bs"/>
+                            <constraint firstItem="qLa-Dt-s8h" firstAttribute="top" secondItem="Ncu-1A-plL" secondAttribute="bottom" constant="4" id="eTy-hu-5fk"/>
+                            <constraint firstItem="Ncu-1A-plL" firstAttribute="top" secondItem="xDa-6I-RSD" secondAttribute="bottom" constant="16" id="gYx-LO-QjK"/>
+                            <constraint firstAttribute="bottom" secondItem="qLa-Dt-s8h" secondAttribute="bottom" id="m3n-hB-sOp"/>
+                            <constraint firstItem="xDa-6I-RSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qfU-Am-eXL"/>
+                            <constraint firstItem="gBe-6N-7sP" firstAttribute="leading" secondItem="VGh-PN-GRl" secondAttribute="trailing" constant="12" id="rvu-An-y3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ncu-1A-plL" secondAttribute="trailing" constant="24" id="wfq-Tt-X7S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addReminderButton" destination="ahv-93-E2v" id="I4J-Pc-BUx"/>
+                        <outlet property="calendarCollectionView" destination="Ncu-1A-plL" id="jqP-Ps-BJV"/>
+                        <outlet property="dateLabel" destination="xDa-6I-RSD" id="gBq-4a-h9J"/>
+                        <outlet property="listView" destination="qLa-Dt-s8h" id="NVP-Kf-j08"/>
+                        <outlet property="monthButton" destination="VGh-PN-GRl" id="x87-yv-Qb4"/>
+                        <outlet property="reminderCollectionView" destination="hEh-GU-p8e" id="GW4-tw-f1x"/>
+                        <outlet property="yearButton" destination="gBe-6N-7sP" id="0vI-dw-zbp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-111" y="-3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
