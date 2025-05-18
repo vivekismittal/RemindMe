@@ -1,6 +1,6 @@
 # 📱 RemindMe
 
-**remindMe** is a sleek, efficient task reminder app built using **Swift** and **UIKit**. It helps users manage their daily tasks with a custom calendar interface and timely notifications — all without relying on third-party libraries.
+**RemindMe** is a sleek, efficient task reminder app built using **Swift** and **UIKit**. It helps users manage their daily tasks with a custom calendar interface and timely notifications — all without relying on third-party libraries.
 
 ---
 
